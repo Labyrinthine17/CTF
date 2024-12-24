@@ -1,5 +1,6 @@
 # Markdown Cheat Sheet
-Reference: https://github.com/falkobanaszak/vscode-management/blob/main/Markdown%20Resources/markdown-cheat-sheet.md?plain=1
+
+Reference: <https://github.com/falkobanaszak/vscode-management/blob/main/Markdown%20Resources/markdown-cheat-sheet.md?plain=1>
 
 - [Markdown Cheat Sheet](#markdown-cheat-sheet)
   - [Basic Syntax](#basic-syntax)
@@ -29,7 +30,6 @@ Reference: https://github.com/falkobanaszak/vscode-management/blob/main/Markdown
     - [Highlight](#highlight)
     - [Subscript](#subscript)
     - [Superscript](#superscript)
-
 
 ## Basic Syntax
 
@@ -96,7 +96,7 @@ These elements extend the basic syntax by adding additional features. Not all Ma
 
 ### Fenced Code Block
 
-```
+```text
 {
   "firstName": "John",
   "lastName": "Smith",

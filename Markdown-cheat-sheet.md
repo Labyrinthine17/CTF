@@ -13,6 +13,7 @@ Reference: <https://github.com/falkobanaszak/vscode-management/blob/main/Markdow
     - [Blockquote](#blockquote)
     - [Ordered List](#ordered-list)
     - [Unordered List](#unordered-list)
+    - [Toggle list](#toggle-list)
     - [Code](#code)
     - [Horizontal Rule](#horizontal-rule)
     - [Link](#link)
@@ -66,6 +67,12 @@ These are the elements outlined in John Gruber’s original design document. All
 - First item
 - Second item
 - Third item
+
+### Toggle list
+
+<details>
+  <summary>Click me</summary>
+</details>
 
 ### Code
 

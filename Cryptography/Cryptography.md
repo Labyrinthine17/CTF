@@ -16,6 +16,9 @@
   - [RSA](#rsa)
     - [Greatest Common Divisor](#greatest-common-divisor)
     - [Extended Euclidean Algorithm](#extended-euclidean-algorithm)
+  - [Endianness](#endianness)
+    - [Little Endian](#little-endian)
+    - [Big Endian](#big-endian)
 
 ## Different type representations
 
@@ -245,3 +248,16 @@ print("[+] GCD: {}".format(gcd))
 print("[+] u,v: {},{}".format(u,v))
 print("\n[*] FLAG: crypto{{{},{}}}".format(u,v))
 ```
+
+## Endianness
+
+### Little Endian
+
+Given a word: qwhfk \
+Little endian form is: apply rev on the word, then convert to hex \
+Note: Use None as delimiter, not space 
+
+### Big Endian
+
+Big endian form is convert to hex \
+Note: Use None as delimiter, not space

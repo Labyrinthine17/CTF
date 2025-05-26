@@ -19,6 +19,8 @@
   - [Endianness](#endianness)
     - [Little Endian](#little-endian)
     - [Big Endian](#big-endian)
+  - [Password Cracking](#password-cracking)
+    - [Zip file cracking](#zip-file-cracking)
 
 ## Different type representations
 
@@ -46,6 +48,8 @@ base-10: 310400273487
 
 ### From Hexadecimal
 
+- Hex uses `[0-9A-Fa-f]` so having symbols → not hex
+
 | Convert To Type | Function | Description |
 | ----------- | ----------- | ----------- |
 | bytes | ```bytes.fromhex("<hex>")``` |  convert hex to byte string |
@@ -54,6 +58,7 @@ base-10: 310400273487
 ### From Base64
 
 - Represent binary data as ASCII string using an alphabet of 64 characters
+- Base64 uses `A-Za-z0-9+/=` so other characters like `]`, `#`, `&`, `*`, `.`, `|`, `@`, `\` → invalid Base64
 - One character of a Base64 string encodes 6 binary digits (bits), and so 4 characters encode 3 8-bit bytes
 - Allows binary data such as images included into HTML or CSS files
 
@@ -253,11 +258,21 @@ print("\n[*] FLAG: crypto{{{},{}}}".format(u,v))
 
 ### Little Endian
 
-Given a word: qwhfk \
-Little endian form is: apply rev on the word, then convert to hex \
-Note: Use None as delimiter, not space 
+Given a word: qwhfk  
+Little endian form is: apply rev on the word, then convert to hex  
+Note: Use None as delimiter, not space
 
 ### Big Endian
 
 Big endian form is convert to hex \
 Note: Use None as delimiter, not space
+
+## Password Cracking
+
+### Zip file cracking
+
+Given a zip file, `hohoho.zip`
+
+```bash
+
+```

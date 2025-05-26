@@ -34,7 +34,10 @@ Reference: <https://github.com/falkobanaszak/vscode-management/blob/main/Markdow
 
 ## Basic Syntax
 
-These are the elements outlined in John Gruber’s original design document. All Markdown applications support these elements.
+These are the elements outlined in John Gruber’s original design document.  
+All Markdown applications support these elements.  
+Using two trailing spaces `(␣␣)` before the line break ensure a soft line break instead of a new paragraph. \
+Or use a `␣\` will work also.
 
 ### Heading
 

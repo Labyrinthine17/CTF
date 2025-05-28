@@ -14,7 +14,14 @@
     - [Conditional statements](#conditional-statements)
     - [Executing the script](#executing-the-script)
   - [Common linux commands](#common-linux-commands)
-    - [`grep` command](#grep-command)
+    - [Search](#search)
+      - [`find` command](#find-command)
+      - [`grep` command](#grep-command)
+    - [Permissions](#permissions)
+      - [`chmod` command](#chmod-command)
+      - [`chown` command](#chown-command)
+    - [File archiving and compression](#file-archiving-and-compression)
+      - [`tar` command](#tar-command)
     - [Scheduling](#scheduling)
     - [Network related commands](#network-related-commands)
   - [SSH](#ssh)
@@ -193,13 +200,58 @@ On the other hand, ./ runs the script in a new subshell, which is a separate pro
 
 ## Common linux commands
 
-### `grep` command
+### Search
+
+#### `find` command
+
+Used to search for files or directories in Linux. It's especially useful for finding hidden files or looking for specific files that contain keywords.
+Usage:
+
+```bash
+find / -name "flag.txt"
+```
+
+#### `grep` command
 
 ```shell
 grep "pattern" file.txt
 grep -i "pattern" file.txt # case sensitive
 grep -r "pattern" /path/to/directory # recursively through directory
 grep -c "pattern" file.txt # count number of matching lines
+```
+
+### Permissions
+
+#### `chmod` command
+
+Modifies file permissions (read, write, execute) on a file or directory.
+
+```bash
+$ chmod 755 filename
+```
+
+This grants read, write, and execute permissions to the owner and read-execute permissions to others.
+
+#### `chown` command
+
+### File archiving and compression
+
+#### `tar` command
+
+A tool to create or extract .tar archive files, often used in CTF challenges for unpacking hidden files.
+
+```bash
+$ tar -xvf archive.tar
+```
+
+This will extract the contents of archive.tar.
+
+```bash
+
+```
+
+```bash
+
 ```
 
 ### Scheduling
